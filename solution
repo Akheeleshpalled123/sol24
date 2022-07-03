@@ -2,7 +2,28 @@ class Dataset
 public : float d[10], t[10], s[10];
 void input()
 {
-cout << enter the 10 distance values;
+cout << "enter the 10 distance values";
 for (int i=0; i<10;i++)
 cin >>d[i]
-cout
+cout<<"enter the 10 corresponding time values";
+for( int i=0;i<10;i++);
+cin>>t[i];
+}
+void print speed()
+{
+for(int i=0;i<10;i++)
+{ 
+s[i] = d[i]/t[i];
+}
+cout<< " time = "<<t[i]<< "/t";
+cout<< "speed="<<s[i];
+}
+}
+cout<<"km/hr";
+<<endl;
+void main()
+{
+dataset S;
+S.input();
+S.printspeed();
+}
