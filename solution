@@ -1,2 +1,8 @@
-# sol24
-solu
+class Dataset
+public : float d[10], t[10], s[10];
+void input()
+{
+cout << enter the 10 distance values;
+for (int i=0; i<10;i++)
+cin >>d[i]
+cout
