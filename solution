@@ -1,30 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+
 class Dataset
 {
 public : float d[10], t[10], s[10];
 void input()
 {
-cout << "enter the 10 distance values";
+std::cout << "enter the 10 distance values";
 for (int i=0; i<10;i++)
-cin >>d[i]
-cout<<"enter the 10 corresponding time values";
+std::cin >>d[i];
+std::cout<<"enter the 10 corresponding time values";
 for( int i=0;i<10;i++)
-cin>>t[i];
+std::cin>>t[i];
 }
-void print speed()
+void printspeed()
 {
 for(int i=0;i<10;i++)
 { 
 s[i] = d[i]/t[i];
+
+std::cout<< " time = "<<t[i]<< "/t";
+std::cout<< "speed="<<s[i];
+std::cout<<"km/hr"<<endl;
 }
-cout<< " time = "<<t[i]<< "/t";
-cout<< "speed="<<s[i];
 }
-}
-cout<<"km/hr";
-<<endl;
-void main()
+};
+
+int main()
 {
 Dataset S;
 S.input();
 S.printspeed();
+return 0;
 }
