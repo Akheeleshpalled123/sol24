@@ -1,4 +1,5 @@
 class Dataset
+{
 public : float d[10], t[10], s[10];
 void input()
 {
@@ -6,7 +7,7 @@ cout << "enter the 10 distance values";
 for (int i=0; i<10;i++)
 cin >>d[i]
 cout<<"enter the 10 corresponding time values";
-for( int i=0;i<10;i++);
+for( int i=0;i<10;i++)
 cin>>t[i];
 }
 void print speed()
@@ -23,7 +24,7 @@ cout<<"km/hr";
 <<endl;
 void main()
 {
-dataset S;
+Dataset S;
 S.input();
 S.printspeed();
 }
